@@ -1,4 +1,4 @@
-<%= simple_form_for @contact,  url: contacts_new_path(@contact) do |f| %>
+<%= simple_form_for @contact do |f| %>
 <%= f.error_notification %>
 <%= f.input :email, placeholder: 'Email', label: false %>
 <%= f.input :descritpion, placeholder: 'Quelle est votre question?', label: false, :input_html => {:rows => 5} %>

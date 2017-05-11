@@ -6,10 +6,10 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
     if @contact.save
-      flash[:success] = "Nous avons bien reçu votre demande d'informations, nous vous répondrons dans les plus brefs délais"
-      redirect_to contacts_new_path
+      flash[:notice] = "Nous avons bien reçu votre demande d'informations, nous vous répondrons dans les plus brefs délais"
+      redirect_to new_contact_path
     else
-      flash[:danger] = "Une erreur est survenue, réessayez."
+      flash[:alert] = "Une erreur est survenue, réessayez."
       render :new
     end
   end
