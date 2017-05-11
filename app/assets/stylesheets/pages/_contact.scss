@@ -8,9 +8,9 @@
 }
 .contact-wrapper {
   background-color: #F2F2F2;
-  height: 400px;
+  height: 500px;
   width: 100%;
-  padding: 50px 20px;
+  padding: 75px 20px;
   margin: 30px 0;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .contact-card {
-  min-height: 300px;
+  min-height: 348px;
   padding: 10px 20px;
   background-color: white;
   text-align: center;
@@ -33,9 +33,14 @@
   padding: 0 10px;
 }
 
+.icons {
+  color: #D0B479;
+}
+
 .centred {
   margin-bottom: 44px;
 }
+
 
 .shared {
   flex: 1;
@@ -43,4 +48,50 @@
 
 .comp-address {
   margin-left: 20px;
+}
+
+.form {
+  max-width: 328px;
+  margin-left: 12px;
+}
+
+.infos-organized {
+  margin-bottom: 54px !important;
+}
+
+@media screen and (min-width: 320px) {
+  .icon-org {
+    display: flex;
+    padding: 0 10px;
+    flex-flow: column;
+  }
+  .icon-org-2 {
+    display: flex;
+    padding: 0 10px;
+    flex-flow: row
+  }
+}
+
+@media screen and (min-width:801px) {
+  .icon-org {
+    display: flex;
+    padding: 0 10px;
+    flex-flow: row
+  }
+  .icon-org-2 {
+    display: flex;
+    padding: 0 10px;
+    flex-flow: row
+  }
+}
+
+.btn-brand {
+  border: 1px solid #D0B479;
+  color: #D0B479;
+}
+
+.btn-brand:hover {
+  background-color: #D0B479;
+  color: white;
+  border: 1px solid #D0B479;
 }
