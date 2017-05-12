@@ -1,25 +1,33 @@
 <div class="navbar">
   <div class="test-flex">
-      <h1 class="home-header home-titles">ALL SUPPLIES</h1>
-      <h2 class="home-subheader home-titles">Architectes d'Intérieur</h2>
-      <hr class="styline">
+    <h1 class="home-header home-titles">ALL SUPPLIES</h1>
+    <h2 class="home-subheader home-titles">Architectes d'Intérieur</h2>
+    <hr class="styline">
   </div>
 
   <div class="nav-items">
     <div class="nav-item">
-      Home
+      <%= link_to root_path do %>
+        Home
+      <%end%>
       <hr class="styline">
     </div>
     <div class="nav-item">
-      Projets
+      <%= link_to projects_path do %>
+        Projets
+      <%end%>
       <hr class="styline">
     </div>
     <div class="nav-item">
-      Inspirations
+      <%= link_to inspirations_path do %>
+        Inspirations
+      <%end%>
       <hr class="styline">
     </div>
     <div class="nav-item">
-      Contact
+      <%= link_to new_contact_path do %>
+        Contact
+      <%end%>
       <hr class="styline">
     </div>
   </div>
