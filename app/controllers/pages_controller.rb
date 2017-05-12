@@ -11,6 +11,9 @@ class PagesController < ApplicationController
   def projects
   end
 
+  def projects2
+  end
+
   def inspirations
   end
 

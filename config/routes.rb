@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get '/test2', to: 'pages#test2'
   get '/inspirations', to: 'pages#inspirations'
   get '/projects', to: 'pages#projects'
+  get '/projects2', to: 'pages#projects2'
 
   resources :contacts, only: [:new, :create]
 
