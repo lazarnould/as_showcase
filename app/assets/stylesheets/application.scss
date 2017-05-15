@@ -13,8 +13,14 @@
 @import "layout/index";
 @import "components/index";
 @import "pages/index";
+@import "shared/navbar";
 
 // image grid
-
 @import "image-grid/normalize";
 @import "image-grid/style3.css";
+
+
+a {
+  text-decoration: none !important;
+}
+
