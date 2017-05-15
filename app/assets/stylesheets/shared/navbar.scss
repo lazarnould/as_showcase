@@ -1,0 +1,31 @@
+.nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.nav-item {
+  font-weight: 100;
+  font-size: 15px;
+  color: #646464;
+}
+
+
+.navbar {
+  margin-bottom: -10px;
+}
+
+.navactive {
+  color: #D0B479 !important;
+}
+
+
+.test-flex {
+  text-align: center;
+}
+
+.styline {
+  border-color: #D0B479;
+  width: 45px;
+}
