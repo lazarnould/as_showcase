@@ -1,84 +1,48 @@
-<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('../../assets/portrait.jpg');">
-  <div class="banner-content">
-    <h1>ARCHITECT & INTERIOR DESIGNER</h1>
-    <hr class="styline">
-    <p>Any work in architecture which does not express serenity is a Mistake.</p>
-    <div class="banner-buttons">
-      <a class="btn-banner btanner">PROJECTS</a>
-      <a class="btn-banner-white btanner">CONTACT ME</a>
-    </div>
-  </div>
-</div>
 
-<div class="flex-grid">
-  <div class="flexhare pictie" style="background-image: url('../../assets/pinterest interior archi 17-min.jpg');"></div>
-  <div class="flexhare textie textie-white">
-    <div style="text-align: center">
-      <h4>FIRST PROJECT</h4>
-      <div class="home-description">
-        <p>Brussels, Belgium</p>
-        <p>Periphery House, Full reconditionning</p>
-        <p>Spring 2017</p>
+
+
+
+
+
+
+
+
+
+<div class="carousel-shell">
+  <!-- CAROUSEL -->
+
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active ">
+        <%= image_tag 'hipster.jpg', class: "tales" %>
+        <div class="carousel-caption">
+        </div>
       </div>
-      <a href="#" class="btn-banner btanner">MORE</a>
-    </div>
-  </div>
-  <div class="flexhare pictie" style="background-image: url('../../assets/pinterest interior archi 19-min.jpg');"></div>
-</div>
-<div class="flex-grid-2">
-  <div class="flexhare pictie" style="background-image: url('../../assets/pinterest interior archi 21-min.jpg');"></div>
-  <div class="flexhare pictie" style="background-image: url('../../assets/pinterest interior archi 13-min.jpg');"></div>
-  <div class="flexhare pictie" style="background-image: url('../../assets/pinterest interior archi 6-min.jpg');"></div>
-  <div class="flexhare textie textie-black">
-    <div style="text-align: center;">
-      <h4>SECOND PROJECT</h4>
-      <div class="home-description">
-        <p>Lasne, Belgium</p>
-        <p>Factory, Reallocation</p> <!-- Reassignement? -->
-        <p>Fall 2016</p>
+      <div class="item">
+        <%= image_tag'modern.jpg', class: "tales" %>
+        <div class="carousel-caption">
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag'crazy.jpg', class: "tales" %>
+        <div class="carousel-caption">
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="talk-section">
-  <div style="text-align: center;">
-    <h4 >LET'S TALK</h4>
-    <div class="home-description">
-      <p>If you're interested in my services and would like additionnal informations or have specific project questions, feel free to contact me.</p>
-      <hr class="styline">
-    </div>
-      <%= link_to new_contact_path, class: "btanner black-btn" do %>
-        CONTACT ME
-      <%end%>
+<script>
+  $.each( jQuery('.carousel .item'), function( i, val ) {
+    $(this).css('background-image','url('+$(this).find('img').attr('src')+')').css('background-size','cover').find('img').css('visibility','hidden');
+  });
+</script>
 
-  </div>
-</div>
-
-<div class="up-foot">
-  <div class="footer">
-    <div class="navigation">
-      <%= link_to root_path, class: "nav-foot-link nav-foot" do %>
-        Home
-      <%end%>
-      <%= link_to projects_path, class: "nav-foot-link nav-foot" do %>
-        Projets
-      <%end%>
-      <%= link_to inspirations_path, class: "nav-foot-link nav-foot" do %>
-        Inspirations
-      <%end%>
-      <%= link_to new_contact_path, class: "nav-foot-link nav-foot" do %>
-        Contact
-      <%end%>
-    </div>
-    <div class="socials">
-      <i class="fa fa-facebook  nav-foot-social nav-foot" aria-hidden="true"></i>
-      <i class="fa fa-instagram nav-foot-social nav-foot" aria-hidden="true"></i>
-      <i class="fa fa-linkedin  nav-foot-social nav-foot" aria-hidden="true"></i>
-      <i class="fa fa-google-plus nav-foot-social nav-foot" aria-hidden="true"></i>
-    </div>
-  </div>
-  <div class="jdi">
-    This Website has been designed and developed by <i class="fa fa-copyright" aria-hidden="true"></i>JDi Agency
-  </div>
-</div>

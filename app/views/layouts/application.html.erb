@@ -12,9 +12,9 @@
   <%= javascript_include_tag 'modernizr-custom' %>
 </head>
 <body>
-  <%= render 'shared/navbar'%>
   <%= render 'shared/flashes' %>
   <%= yield %>
+  <%= render 'shared/footer'%>
   <script type="text/javascript">
     $(document).ready(function() {
       $(".nav-item > [href]").each(function() {
